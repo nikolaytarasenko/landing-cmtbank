@@ -5,12 +5,8 @@
   }
 
   &__title {
-    margin: 0 0 60px;
     padding-top: 75px;
-    font-size: 1.25rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
+    @include section-title();
   }
 
   &__content {

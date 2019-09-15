@@ -15,7 +15,9 @@ const displayCurrentLanguage = e => {
     langCurrent.textContent = e.target.textContent;
 };
 
-// listeners for language selection
-for (let i = 0; i < langItems.length; i ++) {
-    langItems[i].addEventListener('click', displayCurrentLanguage);
-}
+window.onload = function() {
+    // listeners for language selection
+    for (let i = 0; i < langItems.length; i ++) {
+        langItems[i].addEventListener('click', displayCurrentLanguage);
+    }
+};

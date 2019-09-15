@@ -1,0 +1,52 @@
+.technologies {
+  margin-top: 90px;
+  background: $color-gray;
+
+  &__title {
+    padding-top: 75px;
+    @include section-title();
+  }
+
+  &__container {
+    display: flex;
+  }
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  max-width: 100px;
+  width: 100%;
+  height: 292px;
+  background: url("../img/tech-img-bg.png") top center no-repeat;
+  transition: 0.3s ease;
+}
+
+.content {
+  flex: 1;
+  padding: 0 40px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  &__item {
+    height: 187.5px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+
+  &__text {
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+  }
+}

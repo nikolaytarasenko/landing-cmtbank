@@ -72,3 +72,11 @@
     border-color: darken($bg, 15%);
   }
 }
+
+@mixin section-title() {
+  margin: 0 0 60px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
