@@ -1,6 +1,5 @@
 const jsFiles = [
-  $.path.jquery,
-  $.path.js,
+  $.path.js
 ];
 
 module.exports = function () {

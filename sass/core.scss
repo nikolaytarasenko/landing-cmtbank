@@ -11,15 +11,18 @@ html {
 }
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: 'Lato', Arial, sans-serif;
+	font-weight: 400;
+	color: $color-main;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 }
 
-.wrapper {
-	@include min-max(320px, 100%, 0);
+a,
+a:visited {
+	text-decoration: none;
 }
 
 .container {
-	@include min-max(320px, 1200px, 15px);
+	@include min-max(320px, 1030px, 15px);
 }

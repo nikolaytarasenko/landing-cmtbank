@@ -1,0 +1,133 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    transition: all 0.1s linear;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    position: relative;
+    font-size: 0.9375rem;
+    line-height: 1;
+    color: $color-main;
+    transition: color 0.1s ease-out;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: 100%;
+      width: 0;
+      height: 2px;
+      background: $color-red;
+      transition: background 0.1s linear, width 0.1s linear, left 0.1s linear;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: $color-red;
+      transition: background 0.1s linear, width 0.1s linear, left 0.1s linear;
+    }
+
+    &:hover:not(.nav__link--join) {
+      color: $color-red;
+
+      &::before {
+        width: 100%;
+        left: 0;
+      }
+
+      &::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+
+    &:not(.nav__link--join) {
+      margin-right: 30px;
+    }
+
+    &--join {
+      background: $color-blue;
+      padding: 9px 40px;
+      color: $color-white;
+      border-radius: 5px;
+      height: 33px;
+      margin-right: 15px;
+      transition: background 0.1s;
+
+      &:hover {
+        background: darken($color-blue, 10%);
+      }
+    }
+  }
+
+  &__languages {
+    border: 1px solid #D3DBE9;
+    border-radius: 5px;
+    padding: 8px 13px;
+    color: #95A0B4;
+    cursor: default;
+  }
+}
+
+.languages {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+
+  &__current {
+    width: 18px;
+    text-align: center;
+  }
+
+  &__list {
+    max-height: 0;
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.4s linear;
+  }
+
+  &:hover .languages__list {
+    max-height: 300px;
+  }
+
+  &__item {
+    display: block;
+    padding: 4px 0;
+    border-bottom: 1px solid #D3DBE9;
+    color: #95A0B4;
+    text-align: center;
+    transition: 0.1s linear;
+
+    &:hover {
+      color: $color-red;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
