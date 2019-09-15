@@ -1,0 +1,109 @@
+.about {
+  &__container {
+    position: relative;
+    background: url('../img/about-bg.png') left top no-repeat;
+  }
+
+  &__title {
+    margin: 0 0 60px;
+    padding-top: 75px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__info {
+    flex: 1;
+    max-width: 480px;
+  }
+
+  &__description {
+    max-width: 380px;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0 0 60px;
+    line-height: 1.5rem;
+  }
+
+  &__list {
+    list-style: none;
+    margin-left: 1.5rem;
+    padding: 0;
+  }
+
+  &__item {
+    position: relative;
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin-bottom: 25px;
+    line-height: 1.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      background: $color-red;
+      display: inline-block;
+      width: 11px;
+      height: 11px;
+      top: 8px;
+      margin-left: -24px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.cards {
+  max-width: 360px;
+  margin-left: auto;
+  background: url('../img/cards-bg.png') center no-repeat;
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+      margin-bottom: 1.5rem;
+    }
+
+    &:hover {
+      .cards__img {
+        transform: translateY(-10px) rotate3d(1, 1, 1, 3deg);
+      }
+    }
+  }
+
+  &__description {
+    padding: 25px 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+  }
+
+  &__digit {
+    display: block;
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  &__img {
+
+    transition: 0.2s ease-in-out;
+
+    &--left {
+      margin-right: 20px;
+    }
+
+    &--right {
+      margin-left: 20px;
+    }
+  }
+}
