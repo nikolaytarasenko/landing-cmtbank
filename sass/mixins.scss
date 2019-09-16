@@ -45,31 +45,29 @@
   overflow: hidden;
 }
 
-@mixin button($bg: $second, $borderColor: transparent) {
-  display: block;
-  border: 2px solid $borderColor;
-  border-radius: 5px;
-  background-color: $bg;
-  width: 170px;
-  height: 54px;
+@mixin logo() {
+  transition: all 0.1s linear;
 
-  font-size: 14px;
-  font-family: 'Raleway', sans-serif;
-  color: $white;
-  font-weight: 800;
-  text-transform: uppercase;
-  text-align: center;
-  cursor: pointer;
-  box-shadow: none;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+@mixin button() {
+  border: 0;
   appearance: none;
-  transition-property: background-color, border-color;
-  transition-duration: 200ms;
-  @content;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.1s ease;
 
-  &:hover,
-  &:active {
-    background-color: darken($bg, 15%);
-    border-color: darken($bg, 15%);
+  &--red {
+    background: $color-red;
+    color: $color-white;
+    padding: 13px 54px 15px;
+    border-radius: 5px;
+
+    &:hover {
+      background: darken($color-red, 10%);
+    }
   }
 }
 

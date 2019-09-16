@@ -3,11 +3,7 @@
   justify-content: space-between;
 
   &__logo {
-    transition: all 0.1s linear;
-
-    &:hover {
-      transform: scale(1.03);
-    }
+    @include logo();
   }
 
   &__menu {
