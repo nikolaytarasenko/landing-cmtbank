@@ -11,11 +11,21 @@
 
   &__content {
     display: flex;
+
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+    }
   }
 
   &__info {
     flex: 1;
     max-width: 480px;
+
+    @media (max-width: 767.98px) {
+      max-width: 100%;
+      order: 1;
+      margin-top: 3rem;
+    }
   }
 
   &__description {
@@ -24,12 +34,21 @@
     font-weight: 300;
     margin: 0 0 60px;
     line-height: 1.5rem;
+
+    @media (max-width: 767.98px) {
+      margin: 0 auto 60px;
+    }
   }
 
   &__list {
     list-style: none;
     margin-left: 1.5rem;
     padding: 0;
+
+    @media (max-width: 767.98px) {
+      margin: 0 auto;
+      max-width: 320px;
+    }
   }
 
   &__item {
@@ -75,6 +94,10 @@
         transform: translateY(-10px) rotate3d(1, 1, 1, 3deg);
       }
     }
+
+    @media (max-width: 767.98px) {
+      justify-content: center;
+    }
   }
 
   &__description {
@@ -101,5 +124,10 @@
     &--right {
       margin-left: 20px;
     }
+  }
+
+  @media (max-width: 767.98px) {
+    max-width: 100%;
+    margin-left: 0;
   }
 }

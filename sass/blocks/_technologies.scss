@@ -9,6 +9,11 @@
 
   &__container {
     display: flex;
+
+    @media (max-width: 767.98px) {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+    }
   }
 }
 

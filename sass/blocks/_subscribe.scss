@@ -32,10 +32,18 @@
   &__form {
     max-width: 670px;
     width: 100%;
+
+    @media (max-width: 767.98px) {
+      max-width: 400px;
+    }
   }
 
   &__control {
     display: flex;
+
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+    }
   }
 
   &__label {
@@ -80,6 +88,11 @@
       &:hover {
         background: darken($color-blue, 10%);
         border-color: darken($color-blue, 10%);
+      }
+
+      @media (max-width: 767.98px) {
+        margin-left: 0;
+        margin-top: 1rem;
       }
     }
   }

@@ -26,3 +26,7 @@ a:visited {
 .container {
 	@include min-max(320px, 1030px, 15px);
 }
+
+.js-overflow {
+	overflow: hidden;
+}

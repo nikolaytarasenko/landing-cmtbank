@@ -77,4 +77,8 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+
+  @media (max-width: 767.98px) {
+    font-size: 0.875rem;
+  }
 }

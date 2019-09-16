@@ -16,10 +16,10 @@
           <img src="img/logo_eng.svg" alt="logo">
         </a>
         <div class="nav__menu">
-          <a href="#" class="nav__link">about us</a>
-          <a href="#" class="nav__link">technologies</a>
-          <a href="#" class="nav__link">roadmap</a>
-          <a href="#" class="nav__link nav__link--join">join to pre-ico</a>
+          <a href="#about" class="nav__link">about us</a>
+          <a href="#technologies" class="nav__link">technologies</a>
+          <a href="#roadmap" class="nav__link">roadmap</a>
+          <a href="#subscribe" class="nav__link nav__link--join">join to pre-ico</a>
           <div class="nav__languages languages">
             <div class="languages__current">en</div>
             <div class="languages__list">
@@ -28,6 +28,12 @@
               <a class="languages__item" href="#">de</a>
             </div>
           </div>
+        </div>
+        <div class="nav__burger burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
         </div>
       </div>
     </div>
@@ -52,7 +58,7 @@
     </section>
     <!-- / Hero -->
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="container about__container">
         <h2 class="about__title">The bridge between the blockchain and the real world</h2>
         <div class="about__content">
@@ -94,7 +100,7 @@
     </section>
     <!-- / About -->
     <!-- Technologies -->
-    <section class="technologies">
+    <section class="technologies" id="technologies">
       <div class="container">
         <h2 class="technologies__title">Technologies</h2>
         <div class="technologies__container">
@@ -149,44 +155,46 @@
     </section>
     <!-- / Technologies -->
     <!-- Roadmap -->
-    <section class="roadmap">
+    <section class="roadmap" id="roadmap">
       <div class="container">
         <h2 class="roadmap__title">Roadmap</h2>
-        <ul class="roadmap__container">
-          <li class="roadmap__step step">
-            <div class="step__title">Project start</div>
-            <div class="step__date">Q1 2018</div>
-          </li>
-          <li class="roadmap__step step">
-            <div class="step__title">Development of the bank's main services</div>
-            <div class="step__date">Q3-Q4 2018</div>
-          </li>
-          <li class="roadmap__step step">
-            <div class="step__title">The finished product in the form of a safety device cold wallet</div>
-            <div class="step__date">Q2 2019</div>
-          </li>
-          <li class="roadmap__step step">
-            <div class="step__title">Obtaining the required licenses and certificates (Swift membership, EPC)</div>
-            <div class="step__date">2019-2020</div>
-          </li>
-          <li class="roadmap__step step">
-            <div class="step__title">Developing your own API and the currency exchange</div>
-            <div class="step__date">2021 / ~</div>
-          </li>
-          <li class="roadmap__step step">
-            <div class="step__title">Buying a classic bank in Switzerland, transferring the bank's infrastructure to a blockchain</div>
-            <div class="step__date">~</div>
-          </li>
-          <li class="roadmap__step step">
-            <div class="step__title">Exit to IPO</div>
-            <div class="step__date">~</div>
-          </li>
-        </ul>
+        <div class="roadmap__wrapper">
+          <ul class="roadmap__container">
+            <li class="roadmap__step step">
+              <div class="step__title">Project start</div>
+              <div class="step__date">Q1 2018</div>
+            </li>
+            <li class="roadmap__step step">
+              <div class="step__title">Development of the bank's main services</div>
+              <div class="step__date">Q3-Q4 2018</div>
+            </li>
+            <li class="roadmap__step step">
+              <div class="step__title">The finished product in the form of a safety device cold wallet</div>
+              <div class="step__date">Q2 2019</div>
+            </li>
+            <li class="roadmap__step step">
+              <div class="step__title">Obtaining the required licenses and certificates (Swift membership, EPC)</div>
+              <div class="step__date">2019-2020</div>
+            </li>
+            <li class="roadmap__step step">
+              <div class="step__title">Developing your own API and the currency exchange</div>
+              <div class="step__date">2021 / ~</div>
+            </li>
+            <li class="roadmap__step step">
+              <div class="step__title">Buying a classic bank in Switzerland, transferring the bank's infrastructure to a blockchain</div>
+              <div class="step__date">~</div>
+            </li>
+            <li class="roadmap__step step">
+              <div class="step__title">Exit to IPO</div>
+              <div class="step__date">~</div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <!-- / Roadmap -->
     <!-- Subscribe -->
-    <section class="subscribe">
+    <section class="subscribe" id="subscribe">
       <div class="subscribe__container container">
         <h2 class="subscribe__title">Subscribe to the newsletter and get the first news about new events!</h2>
         <form class="subscribe__form">
