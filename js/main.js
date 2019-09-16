@@ -3,6 +3,7 @@ const langItems = document.querySelectorAll('.languages__item');
 const langCurrent = document.querySelector('.languages__current');
 const nav = document.querySelector('.nav');
 const burger = document.querySelector('.burger');
+const languages = document.querySelector('.languages');
 
 // function for display current (selected) language
 const displayCurrentLanguage = e => {
@@ -36,4 +37,5 @@ window.onload = function() {
 
     burger.addEventListener('click', toggleMenu);
     window.addEventListener('resize', showMenu);
+    languages.addEventListener('click', e => true);
 };

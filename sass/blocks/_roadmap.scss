@@ -1,6 +1,10 @@
 .roadmap {
   margin-top: 60px;
 
+  @media (max-width: 480px) {
+    margin-top: 50px;
+  }
+
   &__wrapper {
     @media (max-width: 767.98px) {
       overflow-x: scroll;

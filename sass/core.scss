@@ -29,4 +29,6 @@ a:visited {
 
 .js-overflow {
 	overflow: hidden;
+	position: fixed;
+	max-width: 100%;
 }
